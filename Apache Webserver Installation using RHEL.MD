@@ -77,4 +77,28 @@ To check if the syntax is ok, lets say some changes were made to the configurati
 
 ![Alt text](image-7.png)
 
+# Configuration file (/etc/httpd/conf/httpd.conf)
+* **Server Root** - Root directory for web server configuration.
+* **Listen** - Specifies the port to listen on.
+* **Include** - Include files into the confirguration.
+* **User/group** - Users and Group for Apache to run as.
+* **Server token** - Default OS, change of product only.
+* **Server signature** - Set to off.
+```
+/etc/httpd/conf.d/*.conf
+/etc/httpd/conf/httpd.conf
+```
+
+PID file - Process ID file is a file containing the process identification number (pid) that is stored in a well-defined location of the file system thus allowing other programs to find out the pid of a running script, its stores the process ID of a given program. If you vi into the path using the below command, we see the process ID **14816** of the root server. 
+
+`vi /var/run/httpd/httpd.pid`
+
+![Alt text](image-8.png)
+![Alt text](image-9.png)
+
+However, if you want to further know how these configurations are done to have an active web page you can reference my 
+[**LAMP Stack Implementation project**](https://github.com/chibyke01/DevOps_Projects/blob/814bb8b0ba466654a9ace48306e62f483b1fafc3/Project03_LAMP_Stack_Implementation.MD) and  [**Automating Load Balancer project**](https://github.com/chibyke01/DevOps_Projects/blob/814bb8b0ba466654a9ace48306e62f483b1fafc3/Project08_Automating_Load_Balancer_Configuration_With_Shell_Scripting_Using_Nginx_Webserver.MD)
+by clicking on either of the projects as they are links enabled.
+
+# **Thank you**
 
