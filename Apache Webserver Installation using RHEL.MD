@@ -16,7 +16,7 @@ Some of the accronmy used in the course of this project are:
 
 `root -i` 
 
-![Alt text](image.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/648818ea-9eb3-4069-b4c6-75c97c0384a5)
 
 **Step 2:** Run the below command to update the seever and install the Apache webserver as this will install the latest version of the web server.
 ```
@@ -25,8 +25,8 @@ yum install httpd -y
      or
 yum install httpd
 ```
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/cc9cfbcb-d459-45c8-9f35-fec507d19c89)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/fed1d587-77c2-44b5-84bb-2b95c773255d)
 
 **Step 3:** From the above screenshot I can confirm that the installation is complete and successful, next I will install some models depending on what is required, but most importantly mysql and the openssl modesl will be installed in the course of this project but will also list other models below:
 ```
@@ -35,8 +35,8 @@ yum install httpd_perl
 yum install mod_perl
 yum install php-mysqlnd
 ```
-![Alt text](image-4.png)
-![Alt text](image-5.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/75ddd285-94d8-4e20-ad40-c52b838a123f)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/70675da0-321d-4035-b517-151d2c39fb7f)
 
 **Step 4:** After installion of the Apache server, you confirm the status and either choose to start or enable using any the below cmds depending on what you choose to do at anytime.
 
@@ -48,7 +48,7 @@ systemctl stop httpd
 systemctl reload httpd
 systemctl restart httpd
 ```
-![Alt text](image-3.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/10331f3a-42d9-42da-9d94-c0b0431eab40)
 
 # Managing the Apache Service
 By default Apache uses port 80/443 to listen, this can be confirmed using the nestat command, however before using the netstat command we need to install the net tools using the command
@@ -59,7 +59,7 @@ To confirm the port that Apache is listening run the command below.
 
 `netstat -tupan | grep -i httpd`
 
-![Alt text](image-6.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/9a6eb503-b87a-413b-b0d6-fc113149ba8d)
 
 Should we have any other port we want Apache to listen this can be forced using the below comman.
 
@@ -75,7 +75,7 @@ To check if the syntax is ok, lets say some changes were made to the configurati
 
 `httpd -t`
 
-![Alt text](image-7.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/fa9e798f-2067-47c2-b484-a0521dcd0a28)
 
 # Configuration file (/etc/httpd/conf/httpd.conf)
 * **Server Root** - Root directory for web server configuration.
@@ -93,8 +93,8 @@ PID file - Process ID file is a file containing the process identification numbe
 
 `vi /var/run/httpd/httpd.pid`
 
-![Alt text](image-8.png)
-![Alt text](image-9.png)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/5e78a8ce-c651-4490-a00b-e1f065e72197)
+![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/b4fb66c3-9104-4aef-8f18-2617c6327535)
 
 However, if you want to further know how these configurations are done to have an active web page you can reference my 
 [**LAMP Stack Implementation project**](https://github.com/chibyke01/DevOps_Projects/blob/814bb8b0ba466654a9ace48306e62f483b1fafc3/Project03_LAMP_Stack_Implementation.MD) and  [**Automating Load Balancer project**](https://github.com/chibyke01/DevOps_Projects/blob/814bb8b0ba466654a9ace48306e62f483b1fafc3/Project08_Automating_Load_Balancer_Configuration_With_Shell_Scripting_Using_Nginx_Webserver.MD)
