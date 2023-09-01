@@ -14,7 +14,7 @@ Some of the accronmy used in the course of this project are:
 
 **Step 1:** SSH into the EC2 terminal using the widnows cmd prompt. Changed permission to root user using the below cmd:
 
-`root -i` 
+`sudo -i` 
 
 ![image](https://github.com/chibyke01/Apache-Webserver-Installation-on-RHEL-CentOS-based-Servers/assets/103823637/648818ea-9eb3-4069-b4c6-75c97c0384a5)
 
